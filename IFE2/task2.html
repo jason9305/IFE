@@ -5,155 +5,48 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>零基础HTML编码及CSS编码（一）</title>
 	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: #CCCCFF;
-			font-family: "Microsoft Yahei";
+		 body {margin:0;padding:0;background-color:#E4D0D0;}
+		.wrap{width=960px;margin:0 auto;}
+		.header a{color:white;}
+		.header a:hover{color:#ccc;}
+		.header{width:100%;height:60px; background:black;}
+	    .header ul{float:right;line-height: 30px;}
+		.header li{float:left;margin:0 20px;color:red;}
+		.header img{margin-left: 50px;}
+		.content1{margin: 20px;background:white;padding: 20px 15px;line-height: 30px;}
+		.content1 h2{  font-size: 20px;color: #888888;}
+		.content1 img{width:200px;}
+		.author{font-size: 10px;color: #888888;}
+		.content1 span{color:black;}
+		.content1 li{color:white;}
+		.content2{margin: 20px;background:white;padding:20px;}
+		.content2 h1{margin:10px 20px;}
+		.content2 img{width:200px;}
+		.picBox{text-align: center;margin:20px;50px;width:230px; border:1px solid #EBDDDD;}
+		.content3{margin:20px;background:white;padding:20px;}
+		 th, td { text-align: center;}
+		.th1{width:450px;}
+		.th3{width:200px;}
+		th {background-color: #444;color: #fff;}
+		.total{background-color: #AAA;}
+		.content4{margin:20px;background:white;padding:20px;}
+		.gray{font-size: 10px;color: #888888;}
+		.formLabel {
+			display:inline-block;
+			padding: 0px;
+			margin: 0px;
+			width: 30%;
+			text-align: right;
 		}
-
-		header nav {
-			background-color: black;
-			height: 60px;
-		}
-
-		header nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			height: 60px;
-		}
-
-		.logo {
-			width: 150px;
-			float: left;
-			margin-left: 20px;
-		}
-
-		.logo img {
-			width: 100%;
-			height: 60px;
-		}
-
-		.right {
-			float: right;
-		}
-
-		.right li {
-			float: left;
-		}
-
-		li a {
-			display: block;
-			color: white;
-			font-size: 14px;
-			text-align: center;
-			line-height: 10px;
-			padding: 30px 16px;
-			text-decoration: none;
-		}
-
-		.container {
-			margin: 2rem;
-			padding: 2rem;
-			background-color: white;
-			border: #9e9e9e 1px solid;
-			box-shadow: #000000 1px 1px 1px;
-		}
-
-		.author {
-			font-size: 14px;
-			font-family: "Microsoft Yahei";
-		}
-
-		.content {
-			font-size: 16px;
-			letter-spacing: 2px;
-			line-height: 22px;
-			text-indent: 2em;
-		}
-
-		.uList {
-			list-style-type: none;
-			font-size: 16px;
-			letter-spacing: 2px;
-			line-height: 22px;
-		}
-
-		.picBox {
-			margin: 10px 50px;		
-			width: 300px;
-			border: #9e9e9e 0.5px solid;
-			font-size: 16px;
-			font-family: "Microsoft Yahei";
-			letter-spacing: 2px;
-			text-align: center;
-		}
-
-		.picBox img {
-			width: 280px;
-			padding: 5px;
-		}
-
-		.table1 {
-			border: solid #9e9e9e;
-			border-width: 1px 0px 0px 1px;
-			width: 100%; 
-			border-collapse: collapse;
-		}
-
-		.table1 th {
-			border: solid #9e9e9e;
-			border-width: 0px 1px 1px 0px;
-			height: 30px;
-			background-color: black;
-			color: white;
-			text-align: left;
-			padding-left: 10px;
-		}
-
-		.table1 td {
-			border: solid #9e9e9e;
-			border-width: 0px 1px 1px 0px;
-			height: 30px;
-			padding-left: 10px;
-		}
-
-		.total {
-			background-color: #9e9e9e;
-			color: black;
-			font-weight: bold;
-		}
-
 		.formLine {
 			margin: 10px auto;
 			padding: 0px;
 			width: 100%;
 		}
-
-		.formLabel {
-			padding: 0px;
-			margin: 0px;
-			display: inline-block;
-			width: 30%;
-			text-align: right;
-		}
-
-		.formLine select {
-			border-radius: 5px;
-		}
-
 		.formLine textarea {
 			width: 60%;
 			height: 50px;
 		}
-
-		.prompt {
-			font-weight: lighter;
-			font-size: 12px;
-			margin-top: -5px;
-		}
-		
 		#mysubmit {
 			width: 100%;
 			text-align: center;
@@ -165,57 +58,54 @@
 			border-radius: 10px;
 			cursor: pointer;
 		}
-
-		footer {
-			background-color: black;
-			color: white;
-			height: 50px;
+        footer{
+			width: 100%;
 			text-align: center;
-			padding-top: 20px;
+			color: #fff;
+			background-color: black;
+			line-height: 50px;
 		}
 	</style>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li class="logo"><img src="bd_logo1.png" alt="logo" /></li>
-				<li class="right">
-					<ul>
-						<li><a href="">导航链接一</a></li>
-						<li><a href="">导航链接二</a></li>
-						<li><a href="">导航链接三</a></li>
-						<li><a href="">导航链接四</a></li>
-					</ul>
-				</li>
+	<div class="wrap">
+	   <div class="header baidu">
+		   <img src="bd_logo1.png" width="150" height="60" />
+            <ul>
+               <li><a href="">导航链接一</a></li>
+			   <li><a href="">导航链接二</a></li>
+			   <li><a href="">导航链接三</a></li>
+			   <li><a href="">导航链接四</a></li>
 			</ul>
-		</nav>
-	</header>
-	<div class="container">
+	</div>
+	
+<div class="content1">
 		<h1>我是文章一级标题</h1>
 		<h2>我是文章二级标题</h2>
 		<p class="author">文章作者 文章发表时间</p>
-		<p class="content">我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，换行了<br>
+		<p>我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，换行了<br>
 		我是一个很长很长很长很长的段落，<a href="http://ife.baidu.com">这里有个链接http://ife.baidu.com</a>我是一个很长很长很长很长的段落，<b>这里有个粗体</b>我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，换行了<br>
         我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落。</p>
         <img src="pic1.jpg" alt="我真帅"/>
-        <p class="content">我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有个链接打开一个新窗口http://ife.baidu.com</a>我是一个很长很长很长很长的段落。
+        <p>我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有个链接打开一个新窗口http://ife.baidu.com</a>我是一个很长很长很长很长的段落。
 		</p>
 	</div>
-	<div class="container">
+	<div class="content1">
 		<h1>我是第二个文章的一级标题</h1>
 		<h2>二级标题</h2>
 		<p class="author">文章作者 文章发表时间</p>
-		<p class="content">
+		<p>
 		我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落，换行了<br>
 		我是一个很长很长很长很长的段落，<a href="http://ife.baidu.com">这里有个链接http://ife.baidu.com</a>我是一个很长很长很长很长的段落，<b>这里有个粗体</b>我是一个很长很长很长很长的段落，我是一个很长很长很长很长的段落。<br>
 		</p>
 		<img src="pic1.jpg" alt="我真帅"/>
-		<ul class="uList">
-			<li>列表项目一</li>
-			<li>列表项目二</li>
-			<li>列表项目三</li>
+		<ul>
+			<li><span>列表项目一</span></li>
+			<li><span>列表项目二</span></li>
+			<li><span>列表项目三</span></li>
 		</ul>
+	</div>
+	<div class="content2">
 		<h1>图片</h1>
 		<div class="picBox">
 			<p>好看的图片</p>
@@ -262,7 +152,7 @@
 			<img src="pic1.jpg" alt="我真帅"/>
 		</div>
 	</div>
-	<div class="container">
+	<div class="content3">
 		<h1>我是最后一篇文章的一级标题</h1>
 		<h2>二级标题</h2>
 		<p class="author">文章作者 文章发表时间</p>
@@ -272,11 +162,11 @@
 			<li>排名3</li>
 		</ol>
 		<p>下面是一个表格，加了一个border="1"</p>
-		<table class="table1">
+		<table border='1' cellspacing='0' cellpadding='0' style="border-collapse:collapse;">
 		    <tr>
-		    	<th>表头</th>
-		    	<th>表头</th>
-		    	<th>表头</th>
+		    	<th class="th1">表头</th>
+		    	<th class="th1">表头</th>
+		    	<th class="th3">表头</th>
 		    </tr>
 			<tr>
 				<td>表内容</td>
@@ -304,17 +194,17 @@
 			</tr>
 		</table>
 	</div>
-	<div class="container"> 
-		<h1>这里是一个侧栏，我是一个侧栏的标题</h1>
-		<h2>我是侧栏注册窗口标题</h2>
-		<form>
+	<div class="content4"> 
+		<h1>这里是一个侧栏，这是一个侧栏的标题</h1>
+	
+	
 			<div class="formLine">
 				<label class="formLabel">请输入邮箱地址：</label>
 				<input type="text" name="" value="我是一个文本输入框">
 			</div>
 			<div class="formLine">
 				<label class="formLabel"></label>
-				<label class="prompt">邮箱地址请按要求格式输入</label>			
+				<label class="gray">邮箱地址请按要求格式输入</label>			
 			</div>
 			<div class="formLine">
 				<label class="formLabel">请输入密码：</label>
@@ -326,12 +216,12 @@
 			</div>
 			<div class="formLine">
 				<label class="formLabel"></label>
-				<label class="prompt">密码请为6-16位英文数字</label>				
+				<label class="gray">密码请为6-16位英文数字</label>				
 			</div>
 			<div class="formLine">
 				<label class="formLabel">性别：</label>
-				<input type="radio" checked="checked" name="sex"><label>男</label>
-				<input type="radio" name="sex"><label>女</label>
+				<label for="male">男</label><input type="radio" checked="checked" name="sex" id="male">
+				<label for="female">女</label><input type="radio" name="sex"id="female">
 			</div>
 			<div class="formLine">
 				<label class="formLabel">城市：</label>
@@ -342,9 +232,9 @@
 			</div>
 			<div class="formLine">
 				<label class="formLabel">爱好：</label>
-				<input type="checkbox" name=""><label>运动</label>
-				<input type="checkbox" name=""><label>画画</label>
-				<input type="checkbox" name=""><label>艺术</label>
+				<input type="checkbox" name="" id="sport"><label for="sport">运动</label>
+				<input type="checkbox" name="" id="drawing"><label for="drawing">画画</label>
+				<input type="checkbox" name="" id="art"><label for="art">艺术</label>
 			</div>
 			<div class="formLine">
 				<label class="formLabel">个人描述：</label>
@@ -353,10 +243,11 @@
 			<div class="formLine">
 				<input type="submit" id="mysubmit" value="确认提交" />
 			</div>			
-		</form>
+		
 	</div>
 	<footer>
 		版权所有&copy;
 	</footer>
+	</div>
 </body>
 </html>
